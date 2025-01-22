@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progetto_finale_flutter_advanced/page/checkout_page.dart';
 import 'package:progetto_finale_flutter_advanced/page/home_page.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (_) => const HomePage(),
-        '/checkout': (_) => const HomePage(),
+        '/checkout': (_) => const CheckoutPage(),
       },
     );
   }

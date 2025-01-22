@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
             crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16),
         itemCount: 10,
         itemBuilder: (contex, index) => Container(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(16),
@@ -58,22 +58,22 @@ class _HomePageState extends State<HomePage> {
             children: [
               Expanded(
                   child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
                         image: NetworkImage(
                             "https://loremflickr.com/640/480/food"),
                         fit: BoxFit.cover)),
               )),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              Text(
+              const Text(
                 "Testo",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 4,
               ),
               Text(
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 13, color: Colors.grey.shade600),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 4,
               ),
               MaterialButton(
@@ -89,8 +89,8 @@ class _HomePageState extends State<HomePage> {
                 minWidth: double.infinity,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
-                    side: BorderSide(color: Colors.black12)),
-                child: Text('Aggiungi'),
+                    side: const BorderSide(color: Colors.black12)),
+                child: const Text('Aggiungi'),
               )
             ],
           ),
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          child: Text("Completa Acquisto (0)"),
+          child: const Text("Completa Acquisto (0)"),
         ),
       );
 }
